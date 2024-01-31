@@ -1,0 +1,33 @@
+.rickandmorty-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #34A8EB;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.rickandmorty-container:hover {
+    transform: scale(1.05);
+}
+
+.rickandmorty-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.rickandmorty-container h1,
+.rickandmorty-container h3 {
+    margin: 0 10px;
+    color: #333;
+}
+
+.rickandmorty-text {
+    flex-grow: 1;
+}
