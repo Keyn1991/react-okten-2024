@@ -2,12 +2,12 @@ import React from 'react';
 
 import './Simpsons.css';
 
-const Simpsons = ({Name, image, Description}) => {
+const Simpsons = ({name, image, description}) => {
     return (
         <div className="simpsons-container">
-            <h1>{Name}</h1>
-            <img src={image} alt={Name}/>
-            <p>{Description}</p>
+            <h1>{name}</h1>
+            <img src={image} alt={name}/>
+            <p>{description}</p>
         </div>
     );
 };
