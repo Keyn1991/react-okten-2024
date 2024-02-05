@@ -5,8 +5,8 @@ const axiosService = axios.create({
     baseURL
 });
 
-const getAll = () => {
+const getAllLaunches = () => {
     return axiosService.get('/');
 };
 
-export { axiosService, getAll };
+export { axiosService, getAllLaunches };

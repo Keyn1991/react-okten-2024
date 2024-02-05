@@ -1,10 +1,10 @@
 import './App.css';
 
-import {Posts} from "./components/Posts/Posts";
+import {LaunchesListComponent} from "./components/LaunchesListComponent/LaunchesListComponent";
 
 const App = () => (
     <div className="App">
-      <Posts/>
+      <LaunchesListComponent/>
     </div>
 );
 

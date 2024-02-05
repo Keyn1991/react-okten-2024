@@ -1,0 +1,22 @@
+.launch {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.launch:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.launch h2 {
+    margin: 8px 0;
+}
+
+.launch img {
+    max-width: 100%;
+    height: auto;
+}

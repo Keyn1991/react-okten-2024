@@ -1,4 +1,4 @@
 
-const baseURL = 'https://jsonplaceholder.typicode.com/posts';
+const baseURL = 'https://api.spacexdata.com/v3/launches';
 
 export {baseURL}
