@@ -1,13 +1,13 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-import { createUser } from '../../services/axios.Service';
+import {createComments} from '../../services/axios.Service';
 
 function FormComponents({ onSubmitSuccess }) {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = async (data) => {
-            const newUser = await createUser(data);
+            const newUser = await createComments(data);
             onSubmitSuccess(newUser);
             reset();
     };
@@ -20,9 +20,9 @@ function FormComponents({ onSubmitSuccess }) {
                 {errors.name && <p>Name is required</p>}
             </div>
             <div>
-                <label>Username:</label>
-                <input {...register('username', { required: true })} />
-                {errors.username && <p>Username is required</p>}
+                <label>body:</label>
+                <input {...register('body', { required: true })} />
+                {errors.body && <p>Username is required</p>}
             </div>
             <div>
                 <label>Email:</label>

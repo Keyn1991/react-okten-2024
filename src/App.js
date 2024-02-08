@@ -1,13 +1,13 @@
 import './App.css';
 
-import {UsersPage} from "./components/UsersPage/UsersPage";
+import {CommentsPage} from "./components/UsersPage/CommentsPage";
 
 function App() {
 
 
   return (
       <div className="App">
-          <UsersPage/>
+          <CommentsPage/>
       </div>
   );
 }

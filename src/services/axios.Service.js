@@ -1,15 +1,15 @@
 import axios from 'axios';
 import { jsonBaseUrl, urls } from '../constants/urls';
 
-const createUser = async (userData) => {
-        const response = await axios.post(`${jsonBaseUrl}${urls.users}`, userData);
+const createComments = async (userData) => {
+        const response = await axios.post(`${jsonBaseUrl}${urls.comments}`, userData);
         return response.data;
 };
 
-const fetchUsers = async () => {
-        const response = await axios.get(`${jsonBaseUrl}${urls.users}`);
+const fetchComments = async () => {
+        const response = await axios.get(`${jsonBaseUrl}${urls.comments}`);
         return response.data;
 };
 
 
-export { createUser, fetchUsers };
+export { createComments, fetchComments };

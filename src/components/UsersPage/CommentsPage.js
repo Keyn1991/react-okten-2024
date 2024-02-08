@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
-import {createUser, fetchUsers} from "../../services/axios.Service";
+import {createComments, fetchComments} from "../../services/axios.Service";
 import {FormComponents} from "../FormComponents/FormComponents";
-import {UsersComponent} from "../Users/UsersComponent";
+import {CommentsComponent} from "../Comments/CommentsComponent";
 
 
-function UsersPage() {
+function CommentsPage() {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
         async function loadUsers() {
-                const fetchedUsers = await fetchUsers();
+                const fetchedUsers = await fetchComments();
                 setUsers(fetchedUsers);
         }
         loadUsers();
@@ -18,16 +18,16 @@ function UsersPage() {
 
     const handleUserSubmitSuccess = async (userData) => {
 
-            const newUser = await createUser(userData);
+            const newUser = await createComments(userData);
             setUsers(prevUsers => [...prevUsers, newUser]);
     };
 
     return (
         <div>
             <FormComponents onSubmitSuccess={handleUserSubmitSuccess} />
-            <UsersComponent users={users} />
+            <CommentsComponent users={users} />
         </div>
     );
 }
 
-export {UsersPage};
+export {CommentsPage};
