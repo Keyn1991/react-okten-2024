@@ -1,11 +1,15 @@
-
 import './App.css';
 
-const App = () => (
+import {UsersPage} from "./components/UsersPage/UsersPage";
 
-    <div className="App">
+function App() {
 
-    </div>
-);
 
-export default App;
+  return (
+      <div className="App">
+          <UsersPage/>
+      </div>
+  );
+}
+
+export {App};
