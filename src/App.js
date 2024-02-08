@@ -1,15 +1,12 @@
 import './App.css';
 
-import {CommentsPage} from "./components/UsersPage/CommentsPage";
-
-function App() {
+import {CarsList} from "./components/CarsList/CarsList";
 
 
-  return (
-      <div className="App">
-          <CommentsPage/>
-      </div>
-  );
-}
+const App = () => (
+    <div className="App">
+        <CarsList/>
+    </div>
+);
 
 export {App};

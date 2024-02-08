@@ -1,14 +1,7 @@
-const jsonBaseUrl = 'https://jsonplaceholder.typicode.com'
+const baseUrl = 'http://owu.linkpc.net/carsAPI/v1/'
 
-const users = '/users'
-const comments = '/comments'
 
-const urls = {
-    users,
-    comments
-}
 
 export {
-    jsonBaseUrl,
-    urls
+    baseUrl,
 }
