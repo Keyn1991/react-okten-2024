@@ -1,0 +1,24 @@
+.navMenu {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+.navMenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navMenu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navMenu li:last-child {
+    margin-right: 0;
+}
+
+.navLink {
+    text-decoration: none;
+    color: blue;
+    margin: 1rem;
+}
